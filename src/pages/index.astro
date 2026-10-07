@@ -1,7 +1,7 @@
 ---
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,6 +11,241 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro comes</h1>
+		<!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <!-- COLOCA AQUÍ LA URL DE TU IMAGEM DE LOGO / ICONO -->
+            <img src="remoto.jpg" alt="Logo de Gardevoir" class="logo-img">
+            <span>Gardevoir Fanpage</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-gardevoir">Sobre Gardevoir</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#estadisticas">Estadísticas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header / Banner principal -->
+    <header id="inicio" class="hero">
+        <h1>#282 Gardevoir</h1>
+        <p>El Pokémon Envolvente - Tipo Psíquico / Hada</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+
+        <!-- Sección Información General -->
+        <section id="sobre-gardevoir" class="card">
+            <h2>Sobre Gardevoir</h2>
+            <div class="content-grid">
+                <div class="image-container">
+                    <!-- COLOCA AQUÍ LA URL O RUTA DE LA IMAGEN PRINCIPAL DE GARDEVOIR -->
+                    <img src="remoto.jpg" alt="Gardevoir" class="pokemon-img">
+                </div>
+                <div class="info-text">
+                    <p>Gardevoir es un Pokémon de tipo <strong>Psíquico/Hada</strong> introducido en la tercera generación. Es la evolución final de Ralts (cuando evoluciona de Kirlia por nivel).</p>
+                    <p>Tiene la capacidad de ver el futuro. Si siente que su Entrenador está en peligro inminente, se dice que libera su máxima fuerza psíquica para crear un pequeño agujero negro y protegerlo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Características -->
+        <section id="caracteristicas" class="card">
+            <h2>Datos Generales</h2>
+            <ul class="details-list">
+                <li><strong>Categoría:</strong> Pokémon Envolvente</li>
+                <li><strong>Habilidades:</strong> Sincronía / Rastro</li>
+                <li><strong>Habilidad oculta:</strong> Telepatía</li>
+                <li><strong>Peso:</strong> 48,4 kg</li>
+                <li><strong>Altura:</strong> 1,6 m</li>
+            </ul>
+        </section>
+
+        <!-- Sección Estadísticas Base -->
+        <section id="estadisticas" class="card">
+            <h2>Estadísticas Base</h2>
+            <div class="stats">
+                <div class="stat-item"><span>PS:</span> 68</div>
+                <div class="stat-item"><span>Ataque:</span> 65</div>
+                <div class="stat-item"><span>Defensa:</span> 65</div>
+                <div class="stat-item"><span>At. Esp:</span> 125</div>
+                <div class="stat-item"><span>Def. Esp:</span> 115</div>
+                <div class="stat-item"><span>Velocidad:</span> 80</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; Fanpage de Pokémon - Gardevoir</p>
+    </footer>
 	</body>
 </html>
+
+<style>
+	/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f8f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #68ba9b; /* Verde característico de Gardevoir */
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e287a8; /* Rosa característico de Gardevoir */
+}
+
+/* Header / Banner */
+.hero {
+    background: linear-gradient(135deg, #68ba9b, #e287a8);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Tarjetas de Contenido */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: #4a9375;
+    border-bottom: 2px solid #e287a8;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Layout de la sección "Sobre Gardevoir" */
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.pokemon-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #68ba9b;
+}
+
+.info-text {
+    flex: 2;
+    min-width: 250px;
+}
+
+/* Listas y Estadísticas */
+.details-list {
+    list-style: none;
+}
+
+.details-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-item {
+    background-color: #f0fdf7;
+    border: 1px solid #68ba9b;
+    padding: 0.75rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stat-item span {
+    display: block;
+    color: #e287a8;
+    font-size: 0.85rem;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
+</style>
